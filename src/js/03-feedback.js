@@ -60,10 +60,10 @@ function populateFormInput() {
   const savedFormData = JSON.parse(localStorage.getItem(FORM_STATS));
   if (savedFormData) {
     if (savedFormData.email) {
-      refs.inputEmail.value = savedFormData.email;
+      refs.inputEmail.value = "";
     }
     if (savedFormData.message) {
-      refs.textares.value = savedFormData.message;
+      refs.textares.value = "";
     }
   }
 }
